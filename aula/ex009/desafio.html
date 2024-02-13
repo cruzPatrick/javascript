@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gringo</title>
+</head>
+<body>
+    <h1>Qual país você vive?</h1>
+    Escreva aqui:<input type="text" name="pais" id="ipais">
+    <input type="button" value="verificar" onclick="verify()">
+    <div id="res"></div>
+
+    <script>
+        function verify(){
+            var pais = document.querySelector('input#ipais').value
+            var res = document.querySelector('div#res')
+
+            res.innerHTML = `Vivendo em ${pais}!`
+            if(pais=="brasil"||pais=="Brasil"){
+                res.innerHTML += '<br>Você é Brasileiro'
+            }else{
+                res.innerHTML += '<br>Você é Estrangeiro'
+            }
+        }
+    </script>
+</body>
+</html>
