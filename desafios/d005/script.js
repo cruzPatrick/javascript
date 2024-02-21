@@ -20,8 +20,8 @@ function inList(n, l){
 }
 
 function add(){
-    //fiz sozinho a partir daqui ↓
     if(isNum(num.value) && !inList(num.value, val)){
+        //fiz sozinho a partir daqui ↓
        res.innerHTML = ''
        let item = document.createElement('option')
        let n = Number(num.value)
@@ -33,27 +33,33 @@ function add(){
     }else{
         alert('Valor inválido ou valor já encontrado ')
     }
+    num.value = ``
+    num.focus()
 }
 
 function fim(){
-    val.sort()
-    let pos = val.length
-    let soma = 0
-    let cont = 0
-    let maior = 0
-    for(let i in val){
-        soma += val[i]
-        if(maior<val[i])
-            maior=val[i]        
-        cont++
+    if(val.length==0){
+        alert('Insira um valor')
+    }else{
+        val.sort()
+        let pos = val.length
+        let soma = 0
+        let cont = 0
+        let maior = 0
+        for(let i in val){
+            soma += val[i]
+            if(maior<val[i])
+                maior=val[i]        
+            cont++
+        }
+        let media = soma/cont //não precisa de contador pq o pos já tem o valor
+        
+        res.innerHTML += `Ao todo temos ${pos} valores digitados<br>`
+        res.innerHTML += `O menor valor é ${val[0]} <br>`
+        res.innerHTML += `O maior valor é ${maior} <br>`
+        res.innerHTML += `A soma de todos so valores são ${soma}<br>`
+        res.innerHTML += `A média é ${media}`
     }
-    let media = soma/cont
-    
-    res.innerHTML += `Ao todo temos ${pos} valores digitados<br>`
-    res.innerHTML += `O menor valor é ${val[0]} <br>`
-    res.innerHTML += `O maior valor é ${maior} <br>`
-    res.innerHTML += `A soma de todos so valores são ${soma}<br>`
-    res.innerHTML += `A média é ${media}`
 }
 
 
