@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(138, 97, 138);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+     <script>
+        document.write('<h2>Informações</h2>')
+        let lutador = 'Fedor Vladimirovich Emelianenko'
+        let nacio = 'Russo'
+        let idade = 44
+        let altura = 1.83
+        let peso = 106
+        document.write(`Lutador: ${lutador}<br>`)
+        document.write(`Nacionalidade: ${nacio}<br>`)
+        document.write(`Idade: ${idade} Anos<br>`)
+        document.write(`Peso: ${peso} Kg<br>`)
+        document.write(`Altura: ${altura} m <br>`)
+
+        document.write('<h2>Frase do Dia</h2>')
+        const dia = 23
+        const mes = 2
+        const ano = 2024
+        const msg = 'É justo que muito custe o que muito vale'
+        const autor = 'S. Tereza dÁvila'
+        document.write(`${dia}/${mes}/${ano}<br>`)
+        document.write(`${msg}<br>`)
+        document.write(`<strong>${autor}</strong><br>`)
+
+        document.write('<h2>Array de Meses</h2>')
+        let meses = ['Janeiro', 'Fevereiro', 'Março']
+        document.write(`<strong>${meses[0]}</strong>, <strong>${meses[1]}</strong>, <strong>${meses[2]}</strong>, ...`)
+
+        document.write('<h2>Objeto de Jogo</h2>')
+        let game = {
+            jogo:'League of Legends',
+            desen: 'Riot Games',
+            ano: 2009
+        }
+        
+        document.write(`Jogo: <strong>${game.jogo}</strong><br>`)
+        document.write(`Desenvolvido por: <strong>${game.desen}</strong><br>`)
+        document.write(`Ano do Lançamento: <strong>${game.ano}</strong>`)
+    </script>
+</body>
+</html>
