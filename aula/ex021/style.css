@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+
+main{
+    min-width: 360px; /*o prof colocou originalmente min-width: 950px; mas preferi assim pra não ter rolamento*/
+    height: 100vh; /*o prof colocou originalmente min-height: 100px;, mas preferi assim pra ficar mais bonito e sem rolamento*/
+    margin: 0px auto;
+    background-color: white;
+    padding: 1.5rem;
+}
+
+h1, article{
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+#botao{
+    display: inline-block;
+    margin-bottom: 1.5em;
+}
+
+#blight{
+    background-color: rgb(182, 182, 182);
+    color: rgb(17, 17, 17);
+    font-weight: bold;
+}
+/*Botão dark mode*/
+#bdark{
+    background-color: rgb(17, 17, 17);
+    color: rgb(182, 182, 182);
+    font-weight: bold;
+}
+
+section{
+    width: 350px; /*o prof colocou originalmente width: 950px;, mas preferi assim pra não ter rolamento*/
+    margin: 0px auto;
+}
+
+
+button{
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: .50em;
+    cursor: pointer;
+}
+/*Botão light mode*/
+
+.box{
+    padding: .50em;
+    border-radius: 5px;
+}
+/*Mudará com js*/
+.light{
+    background: white;
+    color: rgb(17, 17, 17)
+}
+/*Mudará com JS*/
+.dark{
+    background-color: rgb(17, 17, 17);
+    color: white;
+}
