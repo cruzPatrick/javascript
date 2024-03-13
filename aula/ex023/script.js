@@ -8,7 +8,7 @@ let budark = document.querySelector('button#bdark')
 
 let bupadrao = document.querySelector('button#bpad')
 
-let tela = document.querySelector('body')
+let tela = document.querySelectorAll('.change')
 
 budark.addEventListener('click', darkmode)
 bulight.addEventListener('click', lightmode)
@@ -16,10 +16,9 @@ bupadrao.addEventListener('click', normmode)
 
 function clicou(){
     if (getComputedStyle(menu).display === 'block') {
-        hambu.style.backgroundColor = '';
+        //hambu.style.backgroundColor = ''; -> sem cor, mas foi algo que desiste de fazer :p pois ficou feio, só tá aqui pra eu lembrar
         menu.style.display = 'none';
     }else{
-        hambu.style.backgroundColor = '#9d55f5'
         menu.style.display = 'block'
     }
 }
@@ -27,19 +26,22 @@ function clicou(){
 
 
 function darkmode(){
-    tela.classList.add('dark')
-    tela.classList.remove('light')
+    for(let i=0; i<tela.length; i++){
+        tela[i].classList.add('dark')
+        tela[i].classList.remove('light')
+
+    }
 }
 
 function lightmode(){
-    tela.classList.add('light')
-    tela.classList.remove('dark')
+    for(let i=0; i<tela.length; i++){
+    tela[i].classList.add('light')
+    tela[i].classList.remove('dark')
+    }
 }
 
-function nommode(){
-    if(tela.classList=='light'){
-        tela.classList.remove('light')
-    }else{
-        tela.classList.remove('dark')
+function normmode(){
+    for(let i=0; i<tela.length; i++){
+        tela[i].classList.remove('light','dark')
     }
 }

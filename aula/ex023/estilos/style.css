@@ -40,17 +40,14 @@ span#burguer{
     display: block;
     text-align: center;
     padding: 5px;
-    margin-top: 10px;
     cursor: pointer;
 }
 span#burguer:hover{
-    background-color: #9d55f5;
     color: #c8faad;
 }
 
 menu{
     display: none;
-    background-color: #9d55f5;
     padding: 5px;
 }
 
@@ -165,10 +162,10 @@ span.material-icons{
 }
 .dark{
     color: rgb(202, 202, 202);
-    background-color: rgb(39, 39, 39);
+    background-color: rgb(22, 22, 22);
 }
 
 .light{
     color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(230, 230, 230);
 }
