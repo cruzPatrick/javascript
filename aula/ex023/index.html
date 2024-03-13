@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Exercicio de Eventos</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mq.css" >
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header class="change">
+        <h1 class="change">Aula 11 de Eventos</h1>
+        
+        <span id="burguer" class="material-icons" onclick="clicou()">menu</span>
+        <menu id="opcao">
+            <ul>
+                <li><button class="bot" id="blight">Light</button></li>
+                <li><button class="bot" id="bdark">Dark</button></li>
+                <li><button class="bot" id="bpad">Padrão</button></li>  
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <p>Isso é só para teste das funções e eventos, então o CSS vai ser o mínimo possível</p>
+        <p>Por conta disso vou colocar alguns textos só para encher linguiça e ter o que editar</p>
+        <div id="box">
+            <form >
+                <input type="text" name="text" id="itext" onfocus="focou()" onblur="desfocou()">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>Site Criado para testar coisas feito por <a href="https://github.com/cruzpatrick" target="_blank"><span class="material-icons" id="creator">person</span></a> e  foto de funde de:<abbr title="Foto de Henry  & Co.:"><a href="https://www.pexels.com/pt-br/foto/parede-pintada-de-branco-1939485/" target="_blank"><span class="material-icons" id="link">link</span></a></abbr>
+    </footer>
+</body>
+</html>
+<script src="script.js"></script>

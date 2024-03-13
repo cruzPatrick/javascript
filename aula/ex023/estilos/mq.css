@@ -1,0 +1,86 @@
+
+@media screen and (min-width: 550px) and (max-width: 751px){
+    
+    body{
+        background: white url('../foto/branco.jpg') no-repeat center center fixed;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+
+    header{
+        width: 100%;
+        position: fixed;
+        top: 0;
+    }
+
+
+    span#burguer{
+        display: none;
+    }
+    menu#opcao{
+        display: block;
+        background-color: #AF76F5;
+    }
+
+    main{
+        margin: 10% auto;
+        width: 60%;
+    }
+    
+    input[type=text]{
+        margin-top: 2em;
+    }
+    footer{
+        position: absolute;
+        bottom: 1.5%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50vw;
+    }
+    span.material-icons:hover{
+        transform: scale(1.1);
+        transition-duration: .5s;
+    }
+}
+
+@media screen and (min-width:752px) {
+
+
+    body{
+        background: white url('../foto/branco.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    span#burguer{
+        display: none;
+    }
+    menu#opcao{
+        display: block;
+        background-color: #AF76F5;
+    }
+
+    main{
+        margin: 10% auto;
+        width: 50%;
+    }
+
+    input[type=text]{
+        margin-top: 2.5em;
+    }
+
+    footer{
+        position: absolute;
+        bottom: 1.5%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    span.material-icons:hover{
+        transform: scale(1.1);
+        transition-duration: .5s;
+    }
+}
